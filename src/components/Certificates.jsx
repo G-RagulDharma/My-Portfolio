@@ -9,133 +9,133 @@ const Certificates = (props) => {
       achievement: "Brilliant Bharath Hackathon 2K25",
       issuer: "Hackathon",
       date: "28-03-2025",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "2 Hour Bootcamp in Intro to Data Driven World",
       issuer: "NoviTech R&D Private Limited",
       date: "29-12-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "MasterClass in Full Stack Development",
       issuer: "Novitech R&D Private Limited",
       date: "18-12-2024 to 28-01-2025",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Introduction to MongoDB, AI, and Vector Search",
       issuer: "ICT Academy",
       date: "20-09-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Effective Speaking and Listening Skills",
       issuer: "Wadhwani Foundation",
       date: "27-09-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Explore Generative AI with Copilot in Bing",
       issuer: "Microsoft",
       date: "17-09-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Fundamentals of Generative AI",
       issuer: "Microsoft",
       date: "17-09-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Fundamentals of Responsible Generative AI",
       issuer: "Microsoft",
       date: "17-09-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "2nd Prize in Fun Marathon",
       issuer: "Fathima College",
       date: "02-08-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Certificate of Merit MCA 3rd Sem",
       issuer: "VHNSN College",
       date: "01-06-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "1st Prize in SQL Sorcerer",
       issuer: "ANJAC College",
       date: "27-02-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Entrepreneur Development Programme",
       issuer: "Coir Board (Ministry of MSME, Government of India)",
       date: "14-02-2024 to 16-02-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "UMAGINE TN Global Conference",
       issuer: "ICTAcademy",
       date: "23-02-2024",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Certificate of Merit",
       issuer: "VHNSN College",
       date: "01-06-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Certificate of Merit MCA 1st Sem",
       issuer: "Alumni Association VHNSN College",
       date: "01-06-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Value Added Course",
       issuer: "VHNSN College",
       date: "01-06-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "3rd Prize in Quiz",
       issuer: "ANJAC College",
       date: "08-09-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "2nd Prize in Blind Coding",
       issuer: "ANJAC College",
       date: "08-09-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Certificate of Accomplishment",
       issuer: "TCS",
       date: "03-03-2023",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "First Rank in BSc Computer Science",
       issuer: "VHNSN College",
       date: "01-06-2022",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Google IT Automation with Python",
       issuer: "Coursera",
       date: "08-11-2022",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
     {
       achievement: "Rank Certificate",
       issuer: "VHNSN College",
       date: "01-06-2020",
-      certificateSrc: "assets/All_Certificates.pdf",
+      certificateSrc: "/assets/All_Certificates.pdf",
     },
   ];
 
@@ -173,7 +173,7 @@ const Certificates = (props) => {
       {showAllCertificates && (
         <div className="w-full mt-8">
           <iframe
-            src="assets/All_Certificates.pdf"
+            src="/assets/All_Certificates.pdf"
             title="All Certificates"
             className="w-full h-[500px] sm:h-[700px] rounded-xl border-2 border-gray-700 shadow-lg"
           />
