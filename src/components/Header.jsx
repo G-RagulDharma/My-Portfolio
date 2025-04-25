@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import Certificates from './Certificates';
 
 const Header = () => {
   const location = useLocation();
@@ -30,7 +31,7 @@ const Header = () => {
         <h2 className="text-2xl sm:text-3xl font-bold text-white">Portfolio</h2>
         <nav className="mt-4 relative" ref={navRef}>
           <div className="flex justify-center space-x-4 sm:space-x-8">
-            {['home', 'about', 'project', 'skill', 'contact'].map((section) => (
+            {['home', 'about', 'project', 'skill', 'contact','internship','certificates'].map((section) => (
               <NavLink
                 key={section}
                 to={section === 'home' ? '/' : `/${section}`}
