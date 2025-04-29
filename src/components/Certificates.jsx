@@ -173,7 +173,7 @@ const Certificates = (props) => {
       {showAllCertificates && (
         <div className="w-full mt-8">
           <iframe
-            src={`${import.meta.env.BASE_URL}/assets/All_Certificates.pdf`}
+            src={`${import.meta.env.BASE_URL}assets/All_Certificates.pdf`}
             title="All Certificates"
             className="w-full h-[500px] sm:h-[700px] rounded-xl border-2 border-gray-700 shadow-lg"
           />

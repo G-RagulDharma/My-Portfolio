@@ -8,14 +8,14 @@ const Internship = (props) => {
             title: 'QuickMart',
             duration: 'Jan 9,2025 - Apr 14,2025',
             technology: 'React.js, Node.js, Express.js, MongoDB, Bootstrap, Tailwind CSS',
-            internshipSrc: `${import.meta.env.BASE_URL}/assets/DCE_certificate.pdf`
+            internshipSrc: `${import.meta.env.BASE_URL}assets/DCE_certificate.pdf`
         },
         {
             company: 'Thulija',
             title: 'Learning Management System',
             duration: 'Jan 2025 - Apr 2025',
             technology: 'Angular',
-            internshipSrc: `${import.meta.env.BASE_URL}/assets/Thulija_certificate.pdf`
+            internshipSrc: `${import.meta.env.BASE_URL}assets/Thulija_certificate.pdf`
         }
     ]
     return (

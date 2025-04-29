@@ -8,21 +8,21 @@ const Project = () => {
       description:
         'Built a full-stack e-commerce application that allows users to browse and purchase products online. Key features include product listing, shopping cart, order processing, QR code generation for order tracking, and simulated credit card payment system. Designed a responsive and user-friendly interface using React.js and Tailwind CSS, with backend services handled by Node.js and Express.js. Used MongoDB for storing user, product, and order data.',
       technology: 'React.js, Node.js, Express.js, MongoDB, Bootstrap, Tailwind CSS',
-      videoSrc:`${import.meta.env.BASE_URL}/assets/Quickmart.mp4`
+      videoSrc:`${import.meta.env.BASE_URL}assets/Quickmart.mp4`
     },
     {
       name: 'Portfolio Website',
       description:
         'A personal portfolio website built using the MERN stack (MongoDB, Express.js, React, and Node.js) to showcase my skills, projects, and experience as a Full Stack Developer. The site includes sections like About Me, Projects, Skills, Resume, and Contact, all presented with a clean and responsive design. It demonstrates my ability to build full-stack web applications, handle both front-end and back-end development, and create smooth user experiences. This website serves as a platform for potential employers and collaborators to explore my work and get in touch.',
       technology: 'React.js, Node.js, Express.js, MongoDB',
-      videoSrc:`${import.meta.env.BASE_URL}/assets/Portfolio_Website.mp4`
+      videoSrc:`${import.meta.env.BASE_URL}assets/Portfolio_Website.mp4`
     },
     {
       name: 'Online Food Management System',
       description:
         'Created a basic web application to manage food items and orders. The system supports core operations like adding, updating, and deleting food items, as well as placing and viewing orders. The interface was built using HTML and CSS, with PHP handling the server-side logic and MySQL used for data storage. Focused on implementing essential features with a simple and clean UI.',
       technology: 'PHP, HTML, CSS, MySQL',
-      videoSrc:`${import.meta.env.BASE_URL}/assets/online_food_management.mp4`
+      videoSrc:`${import.meta.env.BASE_URL}assets/online_food_management.mp4`
     },
     {
       name: 'School Management System (CRUD)',
