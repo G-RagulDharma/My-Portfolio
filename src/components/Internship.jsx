@@ -19,7 +19,7 @@ const Internship = (props) => {
         }
     ]
     return (
-        <div className="bg-gray-800 w-full max-w-5xl mx-4 sm:mx-6 lg:mx-auto my-8 rounded-3xl flex flex-col items-center p-6 sm:p-8 shadow-2xl">
+        <div className="bg-gray-800 w-full max-w-4xl mx-auto my-6 rounded-3xl flex flex-col items-center p-4 sm:p-6 lg:p-8 shadow-2xl">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8">Internships</h2>
             <div className="w-full space-y-6">
                 {internships.map((internship, index) => (
