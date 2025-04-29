@@ -12,7 +12,7 @@ const Home = (props) => {
             <div className="w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 mt-6 lg:mt-0 lg:ml-8 rounded-full shadow-2xl bg-gradient-to-br from-gray-900 to-gray-800 p-1 border-4 border-transparent overflow-hidden">
 
                 <img
-                    src="/assets/Profile.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/Profile.jpg`}
                     className="w-full h-full object-cover rounded-full"
                     alt="Profile"
                 />
