@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
 
 const Project = () => {
-  const [activeVideo,setActiveVideo]=useState(null);
+  const [activeVideo, setActiveVideo] = useState(null);
   const projects = [
+    {
+      name: 'Grocery Store UI with React',
+      description:
+        'A React-based grocery store interface that fetches products from the DummyJSON API, supports search, category filtering, and pagination. It includes a shopping cart, toggleable sidebar, dropdown menus, and offer-saving features with SweetAlert2 feedback, providing a dynamic and user-friendly e-commerce experience.',
+      technology: 'React.js, Tailwind CSS',
+      liveUrl: `https://groceryui.netlify.app/`
+    },
     {
       name: 'QuickMart',
       description:
         'Built a full-stack e-commerce application that allows users to browse and purchase products online. Key features include product listing, shopping cart, order processing, QR code generation for order tracking, and simulated credit card payment system. Designed a responsive and user-friendly interface using React.js and Tailwind CSS, with backend services handled by Node.js and Express.js. Used MongoDB for storing user, product, and order data.',
       technology: 'React.js, Node.js, Express.js, MongoDB, Bootstrap, Tailwind CSS',
-      videoSrc:`${import.meta.env.BASE_URL}assets/Quickmart.mp4`
+      videoSrc: `${import.meta.env.BASE_URL}assets/Quickmart.mp4`
     },
     {
       name: 'Portfolio Website',
       description:
         'A personal portfolio website built using the MERN stack (MongoDB, Express.js, React, and Node.js) to showcase my skills, projects, and experience as a Full Stack Developer. The site includes sections like About Me, Projects, Skills, Resume, and Contact, all presented with a clean and responsive design. It demonstrates my ability to build full-stack web applications, handle both front-end and back-end development, and create smooth user experiences. This website serves as a platform for potential employers and collaborators to explore my work and get in touch.',
       technology: 'React.js, Node.js, Express.js, MongoDB',
-      videoSrc:`${import.meta.env.BASE_URL}assets/Portfolio_Website.mp4`
+      videoSrc: `${import.meta.env.BASE_URL}assets/Portfolio_Website.mp4`
     },
     {
       name: 'Online Food Management System',
       description:
         'Created a basic web application to manage food items and orders. The system supports core operations like adding, updating, and deleting food items, as well as placing and viewing orders. The interface was built using HTML and CSS, with PHP handling the server-side logic and MySQL used for data storage. Focused on implementing essential features with a simple and clean UI.',
       technology: 'PHP, HTML, CSS, MySQL',
-      videoSrc:`${import.meta.env.BASE_URL}assets/online_food_management.mp4`
+      videoSrc: `${import.meta.env.BASE_URL}assets/online_food_management.mp4`
     },
     {
       name: 'School Management System (CRUD)',
@@ -47,23 +54,32 @@ const Project = () => {
             <h4 className="text-lg sm:text-xl font-medium text-white mb-2">Technology:</h4>
             <p className="text-base sm:text-lg text-pink-500">{project.technology}</p>
 
-           {project.videoSrc && (
-            <>
-            <button onClick={()=>setActiveVideo(activeVideo===index?null:index)}
-            className="bg-pink-600 text-white px-4 py-2 mt-2 rounded hover:bg-pink-700 transition cursor-pointer"
-            >
-              {activeVideo===index?'Hide Video':'View video'}
-            </button>
-            {activeVideo===index&&(
-              <video
-                src={project.videoSrc}
-                controls
-                className='mt-4 w-full rounded-lg'
-              />
-            )}
-
-            </>
-           )}
+            {project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-pink-600 text-white px-4 py-2 mt-2 rounded hover:bg-pink-700 transition cursor-pointer inline-block"
+              >
+                Visit Live Demo
+              </a>
+            ) : project.videoSrc ? (
+              <>
+                <button
+                  onClick={() => setActiveVideo(activeVideo === index ? null : index)}
+                  className="bg-pink-600 text-white px-4 py-2 mt-2 rounded hover:bg-pink-700 transition cursor-pointer"
+                >
+                  {activeVideo === index ? 'Hide Video' : 'View Video'}
+                </button>
+                {activeVideo === index && (
+                  <video
+                    src={project.videoSrc}
+                    controls
+                    className="mt-4 w-full rounded-lg"
+                  />
+                )}
+              </>
+            ) : null}
           </div>
         ))}
       </div>

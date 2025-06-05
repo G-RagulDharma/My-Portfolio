@@ -5,6 +5,13 @@ const Internship = (props) => {
     const internships = [
         {
             company: 'DCE Technology',
+            title: 'Full Stack Developer',
+            duration: 'Dec 2,2024 - May 2,2025',
+            technology: 'React.js, Python Flask, Tailwind CSS',
+            internshipSrc: `${import.meta.env.BASE_URL}assets/Full Stack Intern.pdf`
+        },
+        {
+            company: 'DCE Technology',
             title: 'QuickMart',
             duration: 'Jan 9,2025 - Apr 14,2025',
             technology: 'React.js, Node.js, Express.js, MongoDB, Bootstrap, Tailwind CSS',
